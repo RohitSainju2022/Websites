@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteHat", "WhiteHat.csproj", "{7D2AC191-B810-48BF-AD68-9B95EF0C2377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2AC191-B810-48BF-AD68-9B95EF0C2377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2AC191-B810-48BF-AD68-9B95EF0C2377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2AC191-B810-48BF-AD68-9B95EF0C2377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2AC191-B810-48BF-AD68-9B95EF0C2377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AE2E39-4451-4755-AE4F-3B05BA044AE0}
+	EndGlobalSection
+EndGlobal
