@@ -29,5 +29,9 @@ namespace RBFurniture.Controllers
         {
             return View();
         }
+        public ActionResult Photos()
+        {
+            return View();
+        }
     }
 }

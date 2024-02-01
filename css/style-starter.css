@@ -15128,17 +15128,17 @@ nav ul li a:hover {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/work.jpeg) no-repeat center;
+  background: url(../images/first.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/work321.jpg) no-repeat center;
+  background: url(../images/construction.jpg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../images/lastproject.jpg) no-repeat center;
   background-size: cover;
 }
 
@@ -16294,6 +16294,31 @@ button.owl-next {
   padding: 40px;
   min-height: 350px;
 }
+/*//check if iamge works 
+*/
+.bottomhny-2check-img {
+  background: url(../images/coatedroofing.jpg) no-repeat top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  position:center;
+  padding: 40px;
+  min-height: 350px;
+}
+.bottomhny-3check-img {
+  background: url(../images/buildhouse.jpg) no-repeat top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  position:center;
+  padding: 40px;
+  min-height: 350px;
+}
+/*//////*/
 
 @media (max-width:992px) {
   .w3l-bottom-grids .bottomhny-grids-sec {
@@ -16342,14 +16367,15 @@ button.owl-next {
 /*--//bottom-grids--*/
 /*--/middle--*/
 .middle {
-  background: url(../images/work321.jpg) no-repeat top;
+  background: url(../images/workshop.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
-  position: relative;
+  position:relative;
   z-index: 1;
+
 }
 
 .middle:before {
@@ -16393,7 +16419,7 @@ button.owl-next {
 
 .w3l-specification-6 .specification-6-mian {
   background: #fff;
-  background: url(../images/banner4.jpg) no-repeat top;
+  background: url(../images/construction.jpg) no-repeat top;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -16401,6 +16427,11 @@ button.owl-next {
   -ms-background-size: cover;
   position: relative;
   z-index: 1;
+/*  try to adjust image
+*/   background-position: center bottom; /*//check*/
+    height: 60; /* Set the height to 100% of the viewport height checkcccc */
+  overflow: hidden; /* Hide overflow to prevent scrolling check */
+/*  /////////////////////////*/
 }
 
 .w3l-specification-6 .specification-6-mian::before {
@@ -16655,7 +16686,7 @@ button.owl-next {
 }
 
 .ch-img-3 {
-  background-image: url(../images/3.jpeg);
+  background-image: url(../images/img3.jpg);
 }
 
 .ch-img-4 {

@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Photos";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+
+    // Get the path to the Images folder within the project
+    var imagesFolderPath = Server.MapPath("~/images");
+
+    // Get a list of image file names in the Images folder
+    var imageNames = System.IO.Directory.GetFiles(imagesFolderPath)
+                                      .Select(System.IO.Path.GetFileName)
+                                      .ToList();
+}
+
+
+
+<link href="~/css/style-starter.css" rel="stylesheet" />
+<a href="~/fonts/fontawesome-webfont.eot"></a>
+<a href="~/fonts/fontawesome-webfont.ttf"></a>
+<a href="~/fonts/fontawesome-webfont.woff"></a>
+<a href="~/fonts/fontawesome-webfont.woff2"></a>
+<a href="~/fonts/FontAwesome.otf"></a>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/jquery.countup.js"></script>
+<script src="~/js/jquery.magnific-popup.min.js"></script>
+<script src="~/js/jquery.waypoints.min.js"></script>
+<script src="~/js/owl.carousel.js"></script>
+<script src="~/js/theme-change.js"></script>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: #000; /* Set the background color to black */
+        color: #fff; /* Set text color to white for better contrast */
+    }
+
+    /* Add additional styles as needed */
+</style>
+
+<!-- about breadcrumb -->
+<section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-lg-5 py-3">
+            <h2 class="title">Photos</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li><a href="#url">Home</a></li>
+                <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> Photos </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<body>
+    <div class="container">
+        <div class="row">
+            @foreach (var imageName in imageNames)
+            {
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="team-grids text-center">
+                        <img src="~/images/@imageName" class="img-fluid" alt="">
+                        <!-- Add additional HTML or styles as needed for each image -->
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</body>
+<!-- //about breadcrumb -->
+<!-- Template JavaScript -->
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/theme-change.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
